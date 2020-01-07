@@ -1,0 +1,949 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'PT Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+ }
+}
+.App-header {
+  background-color: #813f3f;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+ }
+  to {
+      transform: rotate(360deg);
+ }
+}
+$blue: #66fcf1;
+$dark: #1f2833;
+$black: #0b0c10;
+$light: #C5C6C7;
+.Hex{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  position: absolute;
+  animation-fill-mode: forwards;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 8rem;
+  font-size: 150px;
+  animation: dash 8s ease-in forwards, dis .9s ease-in-out 2s;
+  color: $blue;
+  fill: rgb(10, 25, 47);
+}
+.NavTop {
+  color: white;
+  background: none;
+  box-shadow: none;
+}
+.Header_Hex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  font-size: 60px;
+  width: 7rem;
+  height: 3.5rem;
+  margin-top: .5rem;
+}
+.Header_Initial_Hex {
+  font-size: 30px;
+  left: 0;
+  margin-left: 2.93rem;
+  position: absolute;
+  margin-top: 1.2rem;
+}
+@keyframes dis {
+  from {
+      -webkit-transform:scale(1);
+ }
+  to {
+      -webkit-transform:scale(0);
+ }
+}
+@keyframes dash {
+  to {
+      stroke-dashoffset: 0;
+ }
+}
+.Initial_Hex {
+  animation: K .5s ease-in 1.5s, Cont .65s ease-in 2s;
+  color: white;
+  animation-fill-mode: forwards;
+  font-size: 80px;
+  width: 100%;
+  height: 8rem;
+  padding: 5px 0 0 0;
+}
+@keyframes K {
+  to {
+      color: black;
+ }
+}
+.Logo_Cont {
+  position: relative;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+@keyframes Cont {
+  from {
+      -webkit-transform:scale(1);
+ }
+  to {
+      -webkit-transform:scale(0);
+ }
+}
+.Title_Cont {
+  display: flex;
+  align-items: flex-end;
+  height: 30%;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.Title {
+  font-size: 30px;
+  color: #64ffda;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  width: 100%;
+  color: #ccd6f6;
+}
+.Title_Sub {
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  width: 46%;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  line-height: 1.6;
+  text-align: left;
+}
+.Header_Cont {
+  width: 100%;
+  height: 108vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: url(MainHeader.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  z-index: 1;
+}
+.Title_Lines_Cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(-45deg, rgba(88, 195, 255, 0.7) 0, rgba(0, 77, 230, 0.7) 40%, rgba(0, 59, 177, 0.7) 100%);
+  strong {
+    color: #1461ff;
+    font-size: 31px;
+    background: #fff;
+    padding: 14px 22px;
+    border-radius: 5px;
+    float: left;
+    width: 6rem;
+    font-weight: bolder;
+  }
+}
+.MainText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35vh;
+  width: 85%;
+  align-items: flex-start;
+}
+
+.DesignB {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 6rem 100vw 0 0;
+  border-color: transparent #fff #fff transparent;
+  border-style: solid;
+  z-index: 2;
+}
+.Title_Name {
+  font-size: 50px;
+  margin-top: 2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #0d358b;
+  text-align: left;
+}
+.Header_Top_Cont {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 4;
+  box-shadow: -1px 1px 1px rgba(20, 97, 255, 0.1);
+  color: white;
+  transition: .3s ease-in-out, color .05s ease-in-out;
+}
+.Header_Sections_Cont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Logo {
+  padding: 30px 0 30px 30px;
+  display: flex;
+  color: #8892b0;
+}
+.Section_Text {
+  padding: 30px 30px 30px 30px;
+  font-size: 18px;
+}
+a {
+  color: inherit;
+}
+.Section_Text a{
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Section_Text a:hover {
+  color: $blue;
+}
+.Section_Text_Right {
+  padding: 30px 40px 30px 20px;
+  color: #8892b0;
+}
+.About_Cont {
+  width: 85%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  align-self: center;
+}
+.AboutSkillCont {
+  width: 85%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: white;
+  align-self: center;
+  justify-content: space-between;
+  p {
+    color: #1f2833;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  p:nth-of-type(2){
+    margin-top: 1rem;
+  }
+}
+.AboutMeCont {
+  width: 33%;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.AboutMeHead {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-self: center;
+}
+.About_Title_Cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.SkillCont {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.SkillsList {
+  display: flex;
+  ul li:nth-of-type(1) {
+    margin: 0;
+  }
+}
+.About_Title {
+  color: $dark;
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+.About_Line {
+  color: $dark;
+  width: 75%;
+  border: 1px solid;
+  border-right: 0;
+  border-left: 0;
+  height: 15px;
+  border-bottom: 0;
+  border-width: 3px;
+}
+
+.About_Line_E {
+  color: #1f2833;
+  width: 75%;
+  border: 1px solid;
+  border-right: 0;
+  border-left: 0;
+  height: 15px;
+  border-bottom: 0;
+  border-width: 3px;
+  margin: 0;
+}
+.About_Text_Cont {
+  width: 100%;
+  align-self: flex-start;
+}
+.About_Text {
+  color: $dark;
+  text-align: left;
+  font-size: 18px;
+  width: 70%;
+  margin: auto;
+}
+.About_Head_Cont {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.About_Languages {
+  text-align: left;
+  font-size: 20px;
+  width: 100%;
+  color: $dark;
+  font-weight: bold;
+}
+.About_Languages_Cont {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.About_Languages_Cont > div > div {
+  display: flex;
+}
+.Language_Column1 {
+  margin-left: 5rem;
+}
+.Language_Column2 {
+  margin-left: 5rem;
+}
+.Language_Text {
+  display: flex;
+  color: $dark;
+  margin-top: 1rem;
+  font-size: 20px;
+  min-width: 10.8rem;
+  text-align: left;
+}
+.Bullet {
+  color: rgb(4, 43, 97);
+  margin-right: 1rem;
+}
+button:focus {
+ outline:0;
+}
+.Button_Cont {
+  height: 20%;
+  margin-top: 8%;
+}
+.Header_Button {
+  padding: 1.4rem 2.5rem;
+  background-color: transparent;
+  border: 2px solid $blue;
+  color: $blue;
+  border-radius: 7px;
+  font-size: 18px;
+  margin-top: 8%;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Header_Button:hover {
+  background-color: rgba(100, 255, 218, .2) 
+}
+.Contact_Button {
+  padding: 1.4rem 2.5rem;
+  background-color: transparent;
+  border: 0;
+  color: $light;
+  border-radius: 7px;
+  font-size: 18px;
+  background-color: $dark;
+  margin-top: 4%;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.Contact_Button > div {
+  display: flex;
+  align-items: center;
+}
+.Contact_Button > div > a {
+  margin-left: .5rem;
+}
+.Contact_Button:hover {
+  background-color: rgba(31, 40, 51, .7);
+}
+.ProjectCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.ProjectCont:nth-of-type(2) {
+  >.Project:nth-of-type(2) {
+    flex-direction: row-reverse;
+    .TextBox {
+      left: 0;
+      right: unset;
+    }
+    .ProjectDesc:nth-of-type(2) {
+      align-items: flex-start;
+    }
+    .ProjectBottom {
+      >svg {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+.Project {
+  height: 19rem;
+  width: 80%;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  margin: 4rem 0px;
+}
+.ProjectImg {
+  height: 100%;
+  width: 60%;
+  background-image: url(/static/media/7-lyft-app.c077f778.png);
+  position: relative;
+  border-radius: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.ImgOver {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 7px;
+  opacity: 0.3;
+  background-color: #0b0c10;
+  transition: 0.7s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+}
+.ProjectDesc {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 40%;
+  position: relative;
+  >h1 {
+    font-size: 25px;
+    color: #1f2833;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  .TextBox {
+    width: 115%;
+    height: max-content;
+    padding: 7px 0px;
+    background: linear-gradient(-45deg, rgba(88, 195, 255, 0.8) 0, rgba(0, 77, 230, 0.8) 40%, rgba(0, 59, 177, 0.8) 100%);
+    position: absolute;
+    right: 0;
+    top: 25%;
+    border-radius: 7px;
+    box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    >p {
+      color: white;
+      font-size: 15px;
+      line-height: 1.3;
+      text-shadow: 0px 0px 15px #0d358b;
+      text-align: left;
+      width: 90%;
+    }
+  }
+}
+.ProjectBottom {
+  display: flex;
+  flex-direction: column;
+  >svg {
+    color: #C5C6C7;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+}
+.Project_Image {
+  background-image: url('https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  height: 19rem;
+  width: 31rem;
+  margin-left: 15%;
+  margin-top: 7%;
+  position: relative;
+  border-radius: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.Title_Div {
+  width: 35rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 57.5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgba(31, 40, 51, 1);
+  font-weight: bold;
+  transition: .5s ease-in-out;
+}
+.Text_Box {
+  width: 25rem;
+  height: 6rem;
+  background: linear-gradient(-45deg,rgba(88, 195, 255,.8) 0,rgba(0, 77, 230,.8) 40%,rgba(0, 59, 177,.8) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 90%;
+  margin-top: 17%;
+  border-radius: 7px;
+  box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  >h1 {
+    width: 90%;
+    height: 60%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    font-size: 15px;
+    line-height: 1.3;
+    text-shadow: 1px 1px 1px #0d358b;
+  }
+}
+.Title_Div > h1:hover {
+  color: rgba(31, 40, 51, .7);
+  cursor: pointer;
+}
+.Github_Icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 164.6%;
+  margin-top: 55%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $light;
+  font-size: 30px;
+  transition: .3s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+.Github_Icon:hover {
+  color: rgba(4, 43, 97, .7);
+  cursor: pointer;
+}
+.Dark_Overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 7px;
+  opacity: .3;
+  background-color: $black;
+  transition: .7s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+}
+.Dark_Overlay:hover {
+  opacity: 0;
+}
+.Footer {
+  height: 3rem;
+  width: 100%;
+  background-color: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light;
+  font-size: 10px;
+  margin-top: 10%;
+}
+.Project_Image_Middle {
+  height: 19rem;
+  width: 35.6rem;
+  margin-left: 42%;
+  margin-top: 7%;
+  position: relative;
+  border-radius: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.Text_Box_Middle {
+  width: 25rem;
+  height: 8rem;
+  background: linear-gradient(-45deg,rgba(88, 195, 255,.8) 0,rgba(0, 77, 230,.8) 40%,rgba(0, 59, 177,.8) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: -61.5%;
+  margin-top: 12%;
+  border-radius: 7px;
+  box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  > h1 {
+    width: 90%;
+    height: 71%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    font-size: 15px;
+    line-height: 1.3;
+    text-shadow: 1px 1px 1px #0d358b;
+  }
+}
+.Language_Cont_Flex {
+  display: flex;
+}
+.Title_Div_Middle {
+  position: absolute;
+  width: auto;
+  left: 0;
+  top: 0;
+  margin-left: -61.5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgba(31, 40, 51, 1);
+  font-weight: bold;
+  z-index: 2;
+}
+.Title_Div > h1 {
+  transition: .3s ease-in-out;
+}
+.Title_Div_Middle > h1 {
+  transition: .3s ease-in-out;
+}
+.Title_Div > h1:hover {
+  color: $blue;
+}
+.Title_Div_Middle > h1:hover {
+  color: rgba(31, 40, 51, .7);
+  cursor: pointer;
+}
+.Github_Icon_Middle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  margin-left: -61.5%;
+  margin-top: 48%;
+ /* border-radius: 7px;
+  */
+ /* box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.75);
+  */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $light;
+  font-size: 30px;
+  z-index: 2;
+  transition: .3s ease-in-out;
+}
+.Github_Icon:hover{
+  color: $blue;
+}
+.Github_Icon_Middle:hover {
+  color: $blue;
+  cursor: pointer;
+}
+@media only screen and (max-width: 620px) {
+  .Language_Cont_Flex {
+      display: unset;
+ }
+  .Language_Column2{
+      margin-left: 2rem;
+ }
+}
+@media only screen and (max-width: 1013px) {
+  .Text_Box {
+      width: 23.5rem;
+      height: 6.5rem;
+ }
+}
+@media only screen and (max-width: 1050px) {
+  .Text_Box {
+      width: 22.5rem;
+      height: 6.8rem;
+ }
+ .Bullet {
+   display: none;
+ }
+  .About_Languages_Cont > div > div {
+      display: unset;
+ }
+  .Language_Column1{
+      margin-left: 4rem;
+ }
+  .Project {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 966px) {
+  .Text_Box {
+      width: 21.5rem;
+      height: 7rem;
+ }
+}
+@media only screen and (max-width: 966px) {
+  .Text_Box {
+      width: 20.5rem;
+      height: 7.5rem;
+ }
+}
+@media only screen and (max-width: 932px) {
+  .Text_Box {
+      width: 19.5rem;
+      height: 8rem;
+ }
+}
+@media only screen and (max-width: 911px) {
+  .Text_Box {
+      width: 19rem;
+      height: 8.2rem;
+ }
+}
+@media only screen and (max-width: 902px) {
+  .Text_Box {
+      width: 18.2rem;
+      height: 8.5rem;
+ }
+}
+@media only screen and (max-width: 885px) {
+  .Text_Box {
+      width: 60%;
+      height: 8.5rem;
+      background-color: unset;
+      margin-left: 36.5%;
+      box-shadow: unset;
+      margin-top: 4rem;
+ }
+  .Dark_Overlay {
+      opacity: .8;
+      cursor: default;
+ }
+  .Title_Div {
+      width: 60%;
+      margin-left: 33.5%;
+      color: $light;
+      z-index: 2;
+ }
+  .Project_Image{
+      width: 100%;
+      margin-left: 0;
+ }
+  .Github_Icon{
+      margin-left: 90%;
+      margin-top: 16rem;
+      z-index: 2;
+      color: $light;
+ }
+  .Dark_Overlay:hover{
+      opacity: .8;
+ }
+  .Project_Image_Middle {
+      width: 100%;
+      margin: auto;
+      margin-top: 5rem;
+      background-size: contain;
+      background-position-y: center 
+ }
+  .Text_Box_Middle{
+      width: 60%;
+      height: 8rem;
+      background-color: unset;
+      margin-left: 5%;
+      box-shadow: unset;
+      margin-top: 4rem;
+      justify-content: unset;
+ }
+  .Title_Div_Middle{
+      width: 60%;
+      margin-left: 5%;
+      color: $light;
+      z-index: 2;
+      color: #C5C6C7;
+      align-items: start;
+      justify-content: unset;
+ }
+  .Github_Icon_Middle{
+      margin-left: 5%;
+      margin-top: 16rem;
+ }
+}
+@media only screen and (max-width: 800px) {
+  .AboutMeCont {
+    width: 70%;
+    align-self: center;
+  }
+  .AboutSkillCont p:nth-of-type(1) {
+    margin-top: 0.5rem;
+  }
+  .SkillCont {
+    margin-top: 3rem;
+    width: 80%;
+    align-self: center;
+  }
+  .SkillsList {
+    margin-top: 1rem;
+    align-self: center;
+  }
+  .AboutSkillCont {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .Project {
+    flex-direction: column;
+    height: 36rem;
+    margin: 3rem 0px;
+  }
+  .ProjectImg {
+    width: 100%;
+  }
+  .ProjectBottom {
+    margin-top: 2rem;
+    >svg {
+      align-self: flex-start;
+    }
+  }
+  .ProjectDesc {
+    height: unset;
+    width: 100%;
+    align-items: flex-start;
+    >h1 {
+      margin-top: 2rem;
+    }
+    .TextBox {
+      margin-top: 1rem;
+      width: 100%;
+      background: unset;
+      position: unset;
+      right:unset;
+      top: unset;
+      box-shadow: unset;
+      justify-content: flex-start;
+      >p {
+        text-shadow: unset;
+        color: #333;
+      }
+    }
+  }
+  .ProjectCont:nth-of-type(2) > .Project:nth-of-type(2) {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .Title {
+      display: unset;
+      text-align: center;
+ }
+}
+.Title_Div_Middle > h1:hover {
+  color: $blue;
+}
+.Github_Icon_Middle:hover {
+  color: $blue;
+}
