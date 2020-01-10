@@ -16,7 +16,6 @@ const HeaderBar = () => {
         navbar.style.color = "white";
         navbar.style.boxShadow = "none";
         Icon.style.color = "white"
-        console.log(currentScrollPos)
       } else {
         navbar.style.backgroundColor = "white";
         navbar.style.color = "#1f2833";
@@ -25,10 +24,8 @@ const HeaderBar = () => {
       }
       if (prevScrollpos > currentScrollPos) {
         navbar.style.top = "0";
-        console.log(prevScrollpos, "prevscroll")
-        console.log(currentScrollPos, "current")
       } else {
-        navbar.style.top = "-80px";
+        navbar.style.top = "-80px"; 
       } 
       prevScrollpos = currentScrollPos;
     }
@@ -38,7 +35,7 @@ const HeaderBar = () => {
             <div className="Logo_Cont">
 <FiHexagon className="Header_Hex" strokeWidth={1} >
 </FiHexagon>
-<h1 className="Header_Initial_Hex">K</h1>
+<h1 className="Header_Initial_Hex">A</h1>
     </div>
             <ul className="Header_Sections_Cont">
             <li className="Section_Text">

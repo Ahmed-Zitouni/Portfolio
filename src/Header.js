@@ -4,15 +4,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 
 const Header = () => {
-  const [open, setOpen] = useState(<Opening />);
-  setTimeout(() => {
-    setOpen(
-      <div>
-        <h1>Hi I'm John Joneses</h1>
-        <h1>I'm a software engineer</h1>
-      </div>
-    );
-  }, [2000]);
   return (
     <div className="Header_Cont">
       <div className="Title_Lines_Cont">

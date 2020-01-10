@@ -10,8 +10,9 @@ const About = () => {
           <hr className="About_Line" />
         </div>
         <p>
-        I'm a software engineer based in New York. Well-organised person,
-        problem solver, independent employee with high attention to detail.
+        I'm a well-organised person, problem solver, and independent employee 
+        with high attention to detail.  I’m a people-person with deep empathy 
+        and work well in team environments.  
         </p>
         <p>Interested in the entire frontend spectrum and working on ambitious
         projects with positive people.</p>
@@ -26,13 +27,13 @@ const About = () => {
                 <li className="Language_Text"><p className="Bullet">•</p>HTML & S(CSS)</li>
                 <li className="Language_Text"><p className="Bullet">•</p>Javascript (ES6+)</li>
                 <li className="Language_Text"><p className="Bullet">•</p>React / React Native</li>
-                <li className="Language_Text"><p className="Bullet">•</p>SQL / NOSQL</li>
+                <li className="Language_Text"><p className="Bullet">•</p>Graphql</li>
             </ul>
             <ul className="Language_Column1">
+                <li className="Language_Text"><p className="Bullet">•</p>SQL / NOSQL</li>
                 <li className="Language_Text"><p className="Bullet">•</p>Node JS</li>
                 <li className="Language_Text"><p className="Bullet">•</p>AWS Deployment</li>
                 <li className="Language_Text"><p className="Bullet">•</p>Git & Agile</li>
-                <li className="Language_Text"><p className="Bullet">•</p>Node JS</li>
             </ul>
         </div>
       </div>

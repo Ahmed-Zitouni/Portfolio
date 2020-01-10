@@ -5,6 +5,9 @@
   justify-content: center;
   flex-direction: column;
 }
+#root {
+  overflow-x: hidden;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -63,7 +66,7 @@ table {
       transform: rotate(360deg);
  }
 }
-$blue: #66fcf1;
+$blue: #1e56ce;
 $dark: #1f2833;
 $black: #0b0c10;
 $light: #C5C6C7;
@@ -161,6 +164,9 @@ $light: #C5C6C7;
   width: 100%;
   color: #ccd6f6;
 }
+#Contact {
+  margin-top: 6rem;
+}
 .Title_Sub {
   font-size: 18px;
   color: #ffffff;
@@ -209,7 +215,14 @@ $light: #C5C6C7;
   width: 85%;
   align-items: flex-start;
 }
-
+.RealImg {
+  width: 100%;
+  border-radius: 7px;
+  background-size: contain;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
 .DesignB {
   position: absolute;
   bottom: 0;
@@ -257,19 +270,19 @@ a {
   color: inherit;
 }
 .Section_Text a{
-  transition: .3s ease-in-out;
   cursor: pointer;
   text-decoration: none;
 }
 .Section_Text a:hover {
-  color: $blue;
+  font-weight: 600;
 }
 .Section_Text_Right {
   padding: 30px 40px 30px 20px;
   color: #8892b0;
 }
 .About_Cont {
-  width: 85%;
+  width: 75%;
+  height: 110%;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -278,7 +291,7 @@ a {
   align-self: center;
 }
 .AboutSkillCont {
-  width: 85%;
+  width: 75%;
   margin-top: 5rem;
   display: flex;
   flex-direction: row;
@@ -307,7 +320,10 @@ a {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  align-self: center;
+  align-self: flex-start;
+  >hr {
+    margin-left: 0px;
+  }
 }
 .About_Title_Cont {
   display: flex;
@@ -431,10 +447,10 @@ button:focus {
   padding: 1.4rem 2.5rem;
   background-color: transparent;
   border: 0;
-  color: $light;
+  color: white;
   border-radius: 7px;
   font-size: 18px;
-  background-color: $dark;
+  background: -webkit-linear-gradient(-45deg, rgba(88, 195, 255, 0.7) 0, rgba(0, 77, 230, 0.7) 40%, rgba(0, 59, 177, 0.7) 100%);
   margin-top: 4%;
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -447,58 +463,71 @@ button:focus {
   margin-left: .5rem;
 }
 .Contact_Button:hover {
-  background-color: rgba(31, 40, 51, .7);
+  background-color: -webkit-linear-gradient(-45deg, rgba(34, 135, 172, 0.7) 0, rgba(0, 55, 151, 0.7) 40%, rgba(0, 33, 85, 0.7) 100%);
 }
 .ProjectCont {
   width: 100%;
   display: flex;
   flex-direction: column;
   
-}
-.ProjectCont:nth-of-type(2) {
-  >.Project:nth-of-type(2) {
+}  
+  #SecP {
     flex-direction: row-reverse;
     .TextBox {
       left: 0;
       right: unset;
     }
+    .ProjectImg {
+      justify-content: flex-start;
+    }
     .ProjectDesc:nth-of-type(2) {
       align-items: flex-start;
     }
     .ProjectBottom {
-      >svg {
+      h2 {
+        text-align: left;
+        line-height: 1.3;
+      }
+      a {
         align-self: flex-start;
       }
     }
   }
-}
 .Project {
-  height: 19rem;
-  width: 80%;
+  height: 24rem;
+  width: 100%;
   display: flex;
   align-self: center;
   flex-direction: row;
   margin: 4rem 0px;
 }
 .ProjectImg {
-  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: max-content;
   width: 60%;
-  background-image: url(/static/media/7-lyft-app.c077f778.png);
+  min-width: 32rem;
   position: relative;
   border-radius: 7px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: center;
+  img {
+    width: 35rem;
+    border-radius: 7px;
+    max-height: 24rem;
+  }
 }
 .ImgOver {
   height: 100%;
-  width: 100%;
+  width: 35rem;
   position: absolute;
   border-radius: 7px;
   opacity: 0.3;
   background-color: #0b0c10;
   transition: 0.7s ease-in-out;
+  top: 0;
   z-index: 1;
   cursor: pointer;
 }
@@ -510,6 +539,7 @@ button:focus {
   align-items: flex-end;
   width: 40%;
   position: relative;
+  flex: 1;
   >h1 {
     font-size: 25px;
     color: #1f2833;
@@ -517,7 +547,7 @@ button:focus {
     transition: 0.5s ease-in-out;
   }
   .TextBox {
-    width: 115%;
+    width: 110%;
     height: max-content;
     padding: 7px 0px;
     background: linear-gradient(-45deg, rgba(88, 195, 255, 0.8) 0, rgba(0, 77, 230, 0.8) 40%, rgba(0, 59, 177, 0.8) 100%);
@@ -543,12 +573,23 @@ button:focus {
 .ProjectBottom {
   display: flex;
   flex-direction: column;
-  >svg {
-    color: #C5C6C7;
-    font-size: 30px;
-    transition: 0.3s ease-in-out;
+  >h2 {
+    text-align: right;
+    line-height: 1.3;
+  }
+  >a {
+    width: max-content;
+    height: max-content;
     margin-top: 1rem;
     align-self: flex-end;
+    svg {
+      color: #C5C6C7;
+      font-size: 30px;
+      transition: 0.3s ease-in-out;
+    }
+    svg:hover {
+      color: #626363;
+    }
   }
 }
 .Project_Image {
@@ -646,11 +687,11 @@ a {
 .Footer {
   height: 3rem;
   width: 100%;
-  background-color: $dark;
+  background-color: $blue;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $light;
+  color: white;
   font-size: 10px;
   margin-top: 10%;
 }
@@ -757,17 +798,12 @@ a {
       margin-left: 2rem;
  }
 }
-@media only screen and (max-width: 1013px) {
-  .Text_Box {
-      width: 23.5rem;
-      height: 6.5rem;
+@media only screen and (max-width: 1100px) {
+  .ProjectDesc .TextBox {
+    width: 145%;
  }
 }
 @media only screen and (max-width: 1050px) {
-  .Text_Box {
-      width: 22.5rem;
-      height: 6.8rem;
- }
  .Bullet {
    display: none;
  }
@@ -812,6 +848,9 @@ a {
  }
 }
 @media only screen and (max-width: 885px) {
+  #Contact {
+    margin-top: 2rem;
+  }
   .Text_Box {
       width: 60%;
       height: 8.5rem;
@@ -873,10 +912,25 @@ a {
       margin-top: 16rem;
  }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 970px) {
+  .Title_Sub {
+    font-size: 15px;
+  }
+  .Title_Name {
+    font-size: 40px;
+  }
   .AboutMeCont {
     width: 70%;
     align-self: center;
+  }
+  .AboutMeHead {
+    align-self: center;
+    hr {
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+    }
   }
   .AboutSkillCont p:nth-of-type(1) {
     margin-top: 0.5rem;
@@ -893,19 +947,35 @@ a {
   .AboutSkillCont {
     flex-direction: column;
   }
-}
-@media only screen and (max-width: 700px) {
   .Project {
     flex-direction: column;
-    height: 36rem;
+    height: 40rem;
     margin: 3rem 0px;
   }
   .ProjectImg {
     width: 100%;
+    align-self: center;
+    justify-content: center;
+    img {
+      border: 3px solid #ebf1ff;
+      width: 80%;
+      max-height: unset;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    div {
+      width: max-content;
+      height: max-content;
+      max-height: 24rem;
+    }
   }
+  .ImgOver {
+    background-color: transparent;
+    transition: none;
+    }
   .ProjectBottom {
     margin-top: 2rem;
-    >svg {
+    >a {
       align-self: flex-start;
     }
   }
@@ -913,26 +983,39 @@ a {
     height: unset;
     width: 100%;
     align-items: flex-start;
+    max-height: 20rem;
     >h1 {
       margin-top: 2rem;
     }
     .TextBox {
       margin-top: 1rem;
-      width: 100%;
+      width: 70%;
       background: unset;
       position: unset;
       right:unset;
       top: unset;
       box-shadow: unset;
       justify-content: flex-start;
+      transition: .2s ease-in;
       >p {
         text-shadow: unset;
         color: #333;
       }
     }
   }
-  .ProjectCont:nth-of-type(2) > .Project:nth-of-type(2) {
+  #SecP {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .ProjectImg {
+    width: 100%;
+    img {
+      width: 80%;
+    }
+  }
+  .TextBox {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -946,4 +1029,12 @@ a {
 }
 .Github_Icon_Middle:hover {
   color: $blue;
+}
+
+.ProjectImg > div > img::after {
+  content: '';
+  display: block;
+background-color: black;
+position: absolute;
+opacity: .3;
 }

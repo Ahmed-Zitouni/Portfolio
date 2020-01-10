@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Contact = () => {
     return (
-        <div className="About_Cont" id="Contact" style={{marginTop:'6rem'}}>
+        <div className="About_Cont" id="Contact">
         <div className="About_Title_Cont">
             <div className="About_Head_Cont" >
             <ScrollAnimation animateIn='fadeInUp' animateOnce='true'>
