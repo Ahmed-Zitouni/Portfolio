@@ -1,7 +1,5 @@
 import React from 'react' 
 import {FiHexagon} from 'react-icons/fi'
-import deer from './small-deer.2a0425af.svg'
-import Particles from 'react-particles-js'
 const Opening = () => {
 
     return (

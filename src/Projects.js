@@ -1,11 +1,8 @@
 import React, {useState} from "react";
 import { FaGithub } from "react-icons/fa";
-import RealEstate from "./RE4.jpg";
-import RE1 from "./image2.jpg";
-import App from "./7-lyft-app.png";
-import BikeSite1 from "./BikeSite.PNG"
-import BikeSite from "./Final1.PNG"
-import RealEstateSite from "./RealEstateSite.jpg"
+import App from "./Images/AsendApp.png";
+import BikeSite from "./Images/BikeSite.jpg"
+import RealEstateSite from "./Images/RealEstateSite.jpg"
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Projects = () => {
@@ -18,7 +15,7 @@ const Projects = () => {
   return (
     <div className="About_Cont" id="Projects">
       <div className="About_Title_Cont">
-      <ScrollAnimation animateIn='fadeInUp' animateOnce='true'>
+      <ScrollAnimation animateIn='fadeInUp' animateOnce={true}>
         <h1 className="About_Title" style={{ minWidth: "7rem" }}>
           Projects
         </h1>
@@ -26,11 +23,11 @@ const Projects = () => {
         </ScrollAnimation>
       </div>
       <div className="ProjectCont">
-        <ScrollAnimation animateIn='fadeInUp' animateOnce='true'>
+        <ScrollAnimation animateIn='fadeInUp' animateOnce={true}>
         <div className="Project">
         <div className="ProjectImg">
-              <a href= "https://expo.io/@ahmed_z/Asend" target="_blank" onMouseLeave={(e) => setHover1(false)} onMouseOver={(e) => setHover1(true)}>
-                <img src = {App}/>
+              <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover1(false)} onMouseOver={(e) => setHover1(true)}>
+                <img src = {App} alt ="App"/>
                 <div className="ImgOver" style={Hover1 ? HoverStyle : null}/>
               </a>
           </div>
@@ -47,19 +44,18 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React Native - NoSQL - Node JS - Puppeter - AWS</h2>
-              <a href= "https://github.com/Ahmed-Zitouni/ClassApp" target="_blank">
+              <a href= "https://github.com/Ahmed-Zitouni/ClassApp" rel="noopener noreferrer" target="_blank">
                 <FaGithub />
               </a>
             </div>
           </div>
-          
         </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn='fadeInUp' animateOnce='true'>
+        <ScrollAnimation animateIn='fadeInUp' animateOnce={true}>
         <div className="Project" id="SecP">
         <div className="ProjectImg">
-              <a href= "https://searchrealestate.netlify.com/" target="_blank" onMouseLeave={(e) => setHover2(false)} onMouseOver={(e) => setHover2(true)}>
-                <img src = {RealEstateSite}/>
+              <a href= "https://searchrealestate.netlify.com/" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover2(false)} onMouseOver={(e) => setHover2(true)}>
+                <img src = {RealEstateSite} alt ="Real Estate"/>
                 <div className="ImgOver" style={Hover2 ? HoverStyle : null}/>
               </a>
           </div>
@@ -75,17 +71,17 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React - Zillow API - Google Maps API - AWS</h2>
-              <a href= "https://github.com/Ahmed-Zitouni/RealEstate" target="_blank">
+              <a href= "https://github.com/Ahmed-Zitouni/RealEstate" rel="noopener noreferrer" target="_blank">
                 <FaGithub />
               </a>
             </div>
           </div>
         </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn='fadeInUp' animateOnce='true' className="Project">
+        <ScrollAnimation animateIn='fadeInUp' animateOnce={true} className="Project">
         <div className="ProjectImg">
-              <a href= "https://bikeshopc.netlify.com/" target="_blank" onMouseLeave={(e) => setHover3(false)} onMouseOver={(e) => setHover3(true)}>
-                <img src = {BikeSite}/>
+              <a href= "https://bikeshopc.netlify.com/" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover3(false)} onMouseOver={(e) => setHover3(true)}>
+                <img src = {BikeSite} alt ="Bike Shop"/>
                 <div className="ImgOver" style={Hover3 ? HoverStyle : null}/>
               </a>
           </div>
@@ -100,7 +96,7 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React - Javascript - SCSS - React Router</h2>
-              <a href= "https://github.com/Ahmed-Zitouni/BikeStore" target="_blank">
+              <a href= "https://github.com/Ahmed-Zitouni/BikeStore" rel="noopener noreferrer" target="_blank">
                 <FaGithub />
               </a>
             </div>

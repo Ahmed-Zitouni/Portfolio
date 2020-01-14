@@ -185,11 +185,12 @@ $light: #C5C6C7;
   justify-content: center;
   align-items: center;
   margin: auto;
-  background-image: url(MainHeader.jpg);
+  background-image: url(Images/MainHeader.jpg);
   background-size: cover;
   background-position: center bottom;
   position: relative;
   z-index: 1;
+  min-height: 32rem;
 }
 .Title_Lines_Cont {
   display: flex;
@@ -450,7 +451,7 @@ button:focus {
   color: white;
   border-radius: 7px;
   font-size: 18px;
-  background: -webkit-linear-gradient(-45deg, rgba(88, 195, 255, 0.7) 0, rgba(0, 77, 230, 0.7) 40%, rgba(0, 59, 177, 0.7) 100%);
+  background: linear-gradient(-45deg,rgba(88, 195, 255,.8) 0,rgba(0, 77, 230,.8) 40%,rgba(0, 59, 177,.8) 100%);
   margin-top: 4%;
   transition: .5s ease-in-out;
   cursor: pointer;
@@ -459,7 +460,7 @@ button:focus {
   display: flex;
   align-items: center;
 }
-.Contact_Button > div > a {
+.Contact_Button > div > p {
   margin-left: .5rem;
 }
 .Contact_Button:hover {
@@ -936,14 +937,23 @@ a {
     margin-top: 0.5rem;
   }
   .SkillCont {
-    margin-top: 3rem;
+    margin-top: 5rem;
     width: 80%;
     align-self: center;
+    .animated {
+      align-self: center;
+    }
   }
   .SkillsList {
     margin-top: 1rem;
     align-self: center;
   }
+  .Language_Text {
+    font-size: 100%;
+  }
+  .Language_Column1 {
+    margin-left: 5%;
+}
   .AboutSkillCont {
     flex-direction: column;
   }
@@ -957,7 +967,7 @@ a {
     align-self: center;
     justify-content: center;
     img {
-      border: 3px solid #ebf1ff;
+      box-shadow: 2px 6px 13px -5px rgba(0, 0, 0, 0.75);
       width: 80%;
       max-height: unset;
       object-fit: contain;
