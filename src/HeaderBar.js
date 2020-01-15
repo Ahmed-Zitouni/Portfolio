@@ -27,7 +27,7 @@ const HeaderBar = () => {
     prevScrollpos = currentScrollPos;
   };
   return (
-    <navbar id="navbar" className="Header_Top_Cont">
+    <div id="navbar" className="Header_Top_Cont">
       <div className="Logo_Cont">
         <FiHexagon className="Header_Hex" strokeWidth={1}></FiHexagon>
         <h1 className="Header_Initial_Hex">A</h1>
@@ -44,7 +44,7 @@ const HeaderBar = () => {
           <a href="#Contact">Contact Me</a>
         </li>
       </ul>
-    </navbar>
+    </div>
   );
 };
 

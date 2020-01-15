@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt} from "react-icons/fa";
 import App from "./Images/AsendApp.png";
 import BikeSite from "./Images/BikeSite.jpg"
 import RealEstateSite from "./Images/RealEstateSite.jpg"
@@ -44,9 +44,14 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React Native - NoSQL - Node JS - Puppeter - AWS</h2>
-              <a href= "https://github.com/Ahmed-Zitouni/ClassApp" rel="noopener noreferrer" target="_blank">
-                <FaGithub />
-              </a>
+              <div>
+                <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank">
+                  <FaExternalLinkAlt />
+                </a>
+                <a href= "https://github.com/Ahmed-Zitouni/ClassApp" rel="noopener noreferrer" target="_blank">
+                  <FaGithub />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -71,9 +76,14 @@ const Projects = () => {
             </div>
             <div className="ProjectBottom">
               <h2>React - Zillow API - Google Maps API - AWS</h2>
-              <a href= "https://github.com/Ahmed-Zitouni/RealEstate" rel="noopener noreferrer" target="_blank">
-                <FaGithub />
-              </a>
+              <div>
+                <a href= "https://github.com/Ahmed-Zitouni/RealEstate" rel="noopener noreferrer" target="_blank">
+                  <FaGithub />
+                </a>
+                <a href= "https://searchrealestate.netlify.com/" rel="noopener noreferrer" target="_blank">
+                  <FaExternalLinkAlt />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -90,15 +100,20 @@ const Projects = () => {
             <div className="TextBox">
               <p>
                 A Ecommerce Bicycle shop where users can customize bicycles 
-                and see how they look in real time. Built in React with 
-                responsive design and wide variety of products.
+                and see how they look in real time.  Built in React with 
+                responsive design and wide variety of products.  
               </p>
             </div>
             <div className="ProjectBottom">
               <h2>React - Javascript - SCSS - React Router</h2>
-              <a href= "https://github.com/Ahmed-Zitouni/BikeStore" rel="noopener noreferrer" target="_blank">
-                <FaGithub />
-              </a>
+              <div>
+                <a href= "https://bikeshopc.netlify.com/" rel="noopener noreferrer" target="_blank">
+                  <FaExternalLinkAlt />
+                </a>
+                <a href= "https://github.com/Ahmed-Zitouni/BikeStore" rel="noopener noreferrer" target="_blank">
+                  <FaGithub />
+                </a>
+              </div>
             </div>
           </div>
         </ScrollAnimation>
