@@ -22,15 +22,12 @@ const Contact = () => {
       </div>
       <form method="post" action="mailto:ahmedzitouni802@gmail.com">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-          <button
-            className="Contact_Button"
-            href="mailto:ahmedzitouni802@gmail.com"
-          >
+          <a href="mailto:ahmedzitouni802@gmail.com"  className="Contact_Button">
             <div>
               <MdMailOutline />
               <p>Message Me</p>
             </div>
-          </button>
+          </a>
         </ScrollAnimation>
       </form>
     </div>

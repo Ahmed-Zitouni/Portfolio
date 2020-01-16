@@ -26,29 +26,28 @@ const Projects = () => {
         <ScrollAnimation animateIn='fadeInUp' animateOnce={true}>
         <div className="Project">
         <div className="ProjectImg">
-              <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover1(false)} onMouseOver={(e) => setHover1(true)}>
-                <img src = {App} alt ="App"/>
+              <a href= "https://searchrealestate.netlify.com/" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover1(false)} onMouseOver={(e) => setHover1(true)}>
+                <img src = {RealEstateSite} alt ="App"/>
                 <div className="ImgOver" style={Hover1 ? HoverStyle : null}/>
               </a>
           </div>
           <div className="ProjectDesc">
-            <h1>Asend App</h1>
+            <h1>Real Estate Site</h1>
             <div className="TextBox">
               <p>
-                A production ready App built in React Native that allowed 
-                users to buy and sell closed college classes from one another.
-                AWS was used to handle the user authenication, NoSQL database, 
-                and backend functions.  Puppeter a webscraper was used to autimate 
-                the transfer of classes.   
+                This site uses the Zillow API to displays information 
+                and the estimated value of searched home.  Google maps 
+                was used to display the location of each home, and
+                an AWS server was used to handle api call more effectivly.  
               </p>
             </div>
             <div className="ProjectBottom">
-              <h2>React Native - NoSQL - Node JS - Puppeter - AWS</h2>
+              <h2>React - Zillow API - Google Maps API - AWS</h2>
               <div>
-                <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank">
+                <a href= "https://searchrealestate.netlify.com/" rel="noopener noreferrer" target="_blank">
                   <FaExternalLinkAlt />
                 </a>
-                <a href= "https://github.com/Ahmed-Zitouni/ClassApp" rel="noopener noreferrer" target="_blank">
+                <a href= "https://github.com/Ahmed-Zitouni/RealEstate" rel="noopener noreferrer" target="_blank">
                   <FaGithub />
                 </a>
               </div>
@@ -59,28 +58,29 @@ const Projects = () => {
         <ScrollAnimation animateIn='fadeInUp' animateOnce={true}>
         <div className="Project" id="SecP">
         <div className="ProjectImg">
-              <a href= "https://searchrealestate.netlify.com/" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover2(false)} onMouseOver={(e) => setHover2(true)}>
-                <img src = {RealEstateSite} alt ="Real Estate"/>
+              <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover2(false)} onMouseOver={(e) => setHover2(true)}>
+                <img src = {App} alt ="Real Estate"/>
                 <div className="ImgOver" style={Hover2 ? HoverStyle : null}/>
               </a>
           </div>
           <div className="ProjectDesc">
-            <h1>Real Estate Site</h1>
+            <h1>Asend App</h1>
             <div className="TextBox">
               <p>
-                This site uses the Zillow API to displays information 
-                and the estimated value of searched home.  Google maps 
-                was used to display the location of each home, and
-                an AWS server was used to handle api call more effectivly.
+                A production ready App built in React Native that allowed 
+                users to buy and sell closed college classes from one another.
+                AWS was used to handle the user authenication, NoSQL database, 
+                and backend functions.  Puppeter a webscraper was used to autimate 
+                the transfer of classes.
               </p>
             </div>
             <div className="ProjectBottom">
-              <h2>React - Zillow API - Google Maps API - AWS</h2>
+              <h2>React Native - NoSQL - Node JS - Puppeter - AWS</h2>
               <div>
-                <a href= "https://github.com/Ahmed-Zitouni/RealEstate" rel="noopener noreferrer" target="_blank">
+                <a href= "https://github.com/Ahmed-Zitouni/ClassApp" rel="noopener noreferrer" target="_blank">
                   <FaGithub />
                 </a>
-                <a href= "https://searchrealestate.netlify.com/" rel="noopener noreferrer" target="_blank">
+                <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank">
                   <FaExternalLinkAlt />
                 </a>
               </div>

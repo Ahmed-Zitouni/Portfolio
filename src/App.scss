@@ -445,6 +445,7 @@ button:focus {
   background-color: rgba(100, 255, 218, .2) 
 }
 .Contact_Button {
+  display: inline-block;
   padding: 1.4rem 2.5rem;
   background-color: transparent;
   border: 0;
@@ -973,7 +974,7 @@ a {
   }
   .Language_Column1 {
     margin-left: 5%;
-}
+  }
   .AboutSkillCont {
     flex-direction: column;
   }
