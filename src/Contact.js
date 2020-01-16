@@ -20,7 +20,6 @@ const Contact = () => {
           </p>
         </ScrollAnimation>
       </div>
-      <form method="post" action="mailto:ahmedzitouni802@gmail.com">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <a href="mailto:ahmedzitouni802@gmail.com"  className="Contact_Button">
             <div>
@@ -29,7 +28,6 @@ const Contact = () => {
             </div>
           </a>
         </ScrollAnimation>
-      </form>
     </div>
   );
 };
