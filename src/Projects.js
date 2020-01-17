@@ -35,10 +35,10 @@ const Projects = () => {
             <h1>Real Estate Site</h1>
             <div className="TextBox">
               <p>
-                This site uses the Zillow API to displays information 
-                and the estimated value of searched home.  Google maps 
-                was used to display the location of each home, and
-                an AWS server was used to handle api call more effectivly.  
+                React site that uses the Zillow API to display specific information
+                and the estimated value of searched properties.  
+                An AWS server was used to set up an Express REST API in order 
+                to improve the performance of the site when retrieving data.
               </p>
             </div>
             <div className="ProjectBottom">
@@ -67,15 +67,14 @@ const Projects = () => {
             <h1>Asend App</h1>
             <div className="TextBox">
               <p>
-                A production ready App built in React Native that allowed 
-                users to buy and sell closed college classes from one another.
-                AWS was used to handle the user authenication, NoSQL database, 
-                and backend functions.  Puppeter a webscraper was used to autimate 
-                the transfer of classes.
+              A production-ready App built in React Native that allowed users to 
+              buy and sell closed college classes from one another. AWS was used 
+              to handle the user authentication, NoSQL database, and backend functions. 
+              Puppeteer a web scraper was used to automate the transfer of classes.  
               </p>
             </div>
             <div className="ProjectBottom">
-              <h2>React Native - NoSQL - Node JS - Puppeter - AWS</h2>
+              <h2>React Native - NoSQL - Node.js - Puppeter - AWS</h2>
               <div>
                 <a href= "https://github.com/Ahmed-Zitouni/ClassApp" rel="noopener noreferrer" target="_blank">
                   <FaGithub />
@@ -99,9 +98,9 @@ const Projects = () => {
             <h1>Ecommerce Bike Shop</h1>
             <div className="TextBox">
               <p>
-                A Ecommerce Bicycle shop where users can customize bicycles 
-                and see how they look in real time.  Built in React with 
-                responsive design and wide variety of products.  
+              A responsive Ecommerce bike site where users can customize bicycles and see 
+              how they look in real-time.  Built-in React with a sleek design and a wide 
+              variety of products.  A CDN was used to serve content efficiently.
               </p>
             </div>
             <div className="ProjectBottom">
