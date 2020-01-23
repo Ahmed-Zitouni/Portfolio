@@ -241,6 +241,7 @@ $light: #C5C6C7;
   text-align: left;
 }
 .Header_Top_Cont {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
@@ -252,6 +253,39 @@ $light: #C5C6C7;
   box-shadow: -1px 1px 1px rgba(20, 97, 255, 0.1);
   color: white;
   transition: .3s ease-in-out, color .05s ease-in-out;
+}
+.jSIRvF::before, .jSIRvF::after, .jSIRvF {
+  transition: .3s ease-in-out, color .05s ease-in-out;
+}
+.sc-AykKC  {
+  display: none !important;
+  z-index: 4;
+}
+.DropDown_Cont {
+  position: fixed;
+  display: flex;
+  transform: translateX(110%); 
+  flex-direction: column;
+  background-color: $dark;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  font-size: 20px;
+  top: 0;
+  height: 100vh;
+  width: 45vw;
+  color: white;
+}
+.DropDown:nth-of-type(1) {
+  margin-top: 8rem;
+}
+.DropDown {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.DropDown:hover {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  color: #4882e3;
 }
 .Header_Sections_Cont {
   display: flex;
@@ -1006,6 +1040,9 @@ a {
     }
   .ProjectBottom {
     margin-top: 2rem;
+    >h2 {
+      text-align: left;
+    }
     >div {
       align-self: flex-start;
       a:nth-of-type(1) {
@@ -1042,6 +1079,9 @@ a {
   }
   #SecP {
     flex-direction: column;
+    img {
+      box-shadow:unset
+    }
     .ProjectBottom > div {
       flex-direction: row-reverse;
       >a:nth-of-type(2) {
@@ -1051,6 +1091,12 @@ a {
   }
 }
 @media only screen and (max-width: 730px) {
+  .Section_Text {
+    display: none;
+  }
+  .sc-AykKC  {
+    display: flex !important;
+  }
   .ProjectImg {
     width: 100%;
     img {
@@ -1061,23 +1107,58 @@ a {
     width: 90%;
   }
 }
+@media only screen and (max-width: 530px) {
+  .Language_Text {
+    justify-content: center;
+  }
+  .SkillsList {
+    flex-direction: column;
+  }
+  .Language_Column1 {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .ProjectImg {
+    min-width: unset;
+  }
+  .ProjectImg img {
+    width: 100%;
+  }
+  .ProjectDesc .TextBox {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 480px) {
   .Title {
       display: unset;
       text-align: center;
  }
-}
-.Title_Div_Middle > h1:hover {
-  color: $blue;
-}
-.Github_Icon_Middle:hover {
-  color: $blue;
-}
+  .Title_Div_Middle > h1:hover {
+    color: $blue;
+  }
+  .Github_Icon_Middle:hover {
+    color: $blue;
+  }
 
-.ProjectImg > div > img::after {
-  content: '';
-  display: block;
-background-color: black;
-position: absolute;
-opacity: .3;
+  .ProjectImg > div > img::after {
+    content: '';
+    display: block;
+  background-color: black;
+  position: absolute;
+  opacity: .3;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .Title_Lines_Cont {
+    strong {
+        font-size: 24px;
+        padding: 10px 12px;
+    }
+    .Title_Name {
+      font-size: 24px;
+    }
+    .Title_Sub {
+      font-size: 13px;
+    }
+  }
 }
