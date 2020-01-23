@@ -64,11 +64,11 @@ const Projects = () => {
               </a>
           </div>
           <div className="ProjectDesc">
-            <h1>Asend App</h1>
+            <h1>Class App</h1>
             <div className="TextBox">
               <p>
               A production-ready App built in React Native that allowed users to 
-              buy and sell closed college classes from one another. AWS was used 
+              view open and closed college classes. AWS was used 
               to handle the user authentication, NoSQL database, and backend functions. 
               Puppeteer a web scraper was used to automate the transfer of classes.  
               </p>
