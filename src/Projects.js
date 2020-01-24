@@ -27,7 +27,7 @@ const Projects = () => {
         <div className="Project">
         <div className="ProjectImg">
               <a href= "https://searchrealestate.netlify.com/" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover1(false)} onMouseOver={(e) => setHover1(true)}>
-                <img src = {RealEstateSite} alt ="App"/>
+                <img src = {RealEstateSite} alt ="Real Estate"/>
                 <div className="ImgOver" style={Hover1 ? HoverStyle : null}/>
               </a>
           </div>
@@ -59,18 +59,18 @@ const Projects = () => {
         <div className="Project" id="SecP">
         <div className="ProjectImg">
               <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover2(false)} onMouseOver={(e) => setHover2(true)}>
-                <img src = {App} alt ="Real Estate"/>
+                <img src = {App} alt ="App"/>
                 <div className="ImgOver" style={Hover2 ? HoverStyle : null}/>
               </a>
           </div>
           <div className="ProjectDesc">
-            <h1>Asend App</h1>
+            <h1>Class App</h1>
             <div className="TextBox">
               <p>
               A production-ready App built in React Native that allowed users to 
-              buy and sell closed college classes from one another. AWS was used 
+              view open and closed college classes. AWS was used 
               to handle the user authentication, NoSQL database, and backend functions. 
-              Puppeteer a web scraper was used to automate the transfer of classes.  
+              Puppeteer a web scraper was used to check the status of each class.  
               </p>
             </div>
             <div className="ProjectBottom">
