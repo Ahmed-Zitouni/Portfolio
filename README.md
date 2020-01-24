@@ -1,6 +1,6 @@
 ## Ahmed Zitouni's Portfolio Projects
 
-### Hi I'm a software engineer based in New York. I specialize in building high-quality websites and web-apps with a keen attention to detail.  View my portfolio site to get a more in depth view of each project and my skills.
+### Hi I'm a software engineer based in New York. I specialize in building high-quality websites and web-apps with a keen attention to detail.  View my portfolio site to get a more in depth view of my projects and skills.
 
 [![img](https://portimgaz.s3.amazonaws.com/Portfolio.png)](https://ahmedzitouni.com/)
 
