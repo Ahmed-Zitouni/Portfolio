@@ -597,7 +597,7 @@ button:focus {
     width: 110%;
     height: max-content;
     padding: 12px 0px;
-    background: linear-gradient(-45deg, rgba(88, 195, 255, 0.8) 0, rgba(0, 77, 230, 0.8) 40%, rgba(0, 59, 177, 0.8) 100%);
+    background: linear-gradient(-45deg, rgba(88, 195, 255, 0.8) 0, rgba(0, 77, 230, 0.95) 40%, rgba(0, 59, 177, 0.95) 100%);
     position: absolute;
     right: 0;
     top: 25%;
@@ -638,12 +638,12 @@ button:focus {
       margin-top: 1rem;
       align-self: flex-end;
       svg {
-        color: #C5C6C7;
+        color: #626363;
         font-size: 30px;
         transition: 0.3s ease-in-out;
       }
       svg:hover {
-        color: #626363;
+        color: #1f2833;
       }
     }
   }

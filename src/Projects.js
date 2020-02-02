@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { FaGithub, FaExternalLinkAlt} from "react-icons/fa";
-import App from "./Images/AsendApp.png";
+import App from "./Images/ClassApp.png";
 import BikeSite from "./Images/BikeSite.jpg"
 import RealEstateSite from "./Images/RealEstateSite.jpg"
 import ScrollAnimation from "react-animate-on-scroll";
@@ -58,7 +58,7 @@ const Projects = () => {
         <ScrollAnimation animateIn='fadeInUp' animateOnce={true}>
         <div className="Project" id="SecP">
         <div className="ProjectImg">
-              <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover2(false)} onMouseOver={(e) => setHover2(true)}>
+              <a href= "https://expo.io/@ahmed_z/ClassApp" rel="noopener noreferrer" target="_blank" onMouseLeave={(e) => setHover2(false)} onMouseOver={(e) => setHover2(true)}>
                 <img src = {App} alt ="App"/>
                 <div className="ImgOver" style={Hover2 ? HoverStyle : null}/>
               </a>
@@ -79,7 +79,7 @@ const Projects = () => {
                 <a href= "https://github.com/Ahmed-Zitouni/ClassApp" rel="noopener noreferrer" target="_blank">
                   <FaGithub />
                 </a>
-                <a href= "https://expo.io/@ahmed_z/Asend" rel="noopener noreferrer" target="_blank">
+                <a href= "https://expo.io/@ahmed_z/ClassApp" rel="noopener noreferrer" target="_blank">
                   <FaExternalLinkAlt />
                 </a>
               </div>
@@ -98,8 +98,8 @@ const Projects = () => {
             <h1>Ecommerce Bike Shop</h1>
             <div className="TextBox">
               <p>
-              A responsive Ecommerce bike site where users can customize bicycles and see 
-              how they look in real-time.  Built-in React with a sleek design and a wide 
+              A responsive ecommerce bike site where users can customize bicycles and see 
+              how they look in real-time.  Built in React with a sleek design and a wide 
               variety of products.  A CDN was used to serve content efficiently.
               </p>
             </div>
