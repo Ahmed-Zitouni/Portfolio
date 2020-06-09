@@ -104,7 +104,7 @@ const Projects = () => {
                     <FaGithub />
                   </a>
                   <a
-                    href="https://expo.io/@ahmed_z/ClassApp"
+                    href="https://bikeshopc.netlify.com/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
